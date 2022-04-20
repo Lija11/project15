@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,gBAAgB;AAEhB,AAEQ,WAFG,CACP,IAAI,CACA,IAAI,CAAC;EACD,SAAS,EAAE,GAAG;EACd,IAAI,EAAE,OAAO,GAChB;;AAGT,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;EAC3B,iBAAiB,EAAE,SAAS,GAQ/B;EAZD,AAKI,WALO,CAKP,WAAW,CAAC;IACR,OAAO,EAAE,IAAI;IACb,SAAS,EAAE,IAAI;IACf,UAAU,EAAE,KAAK;IACjB,eAAe,EAAE,MAAM;IACvB,OAAO,EAAE,IAAI,GAChB",
+    "sources": [
+        "../scss/brand.scss",
+        "../scss/_variables.scss",
+        "../scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "brand.css"
+}

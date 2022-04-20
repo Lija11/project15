@@ -1,0 +1,84 @@
+@import 'variables';
+@import 'mixins';
+
+/*=============================
+04. Blog
+=============================*/
+.blog-item {
+    &:hover {
+        .blog-thumb img {
+            transform: scale(1.2);
+        }
+    }
+    .blog-thumb {
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            transform: scale(1);
+            overflow: hidden;
+            @include trans(1s)
+        }
+        .b-thumb-up {
+            position: absolute;
+            top: 0;
+            right: 40px;
+            background: $primary-color;
+            padding: 5px 20px;
+            a {
+                color: $white;
+            }
+        }
+    }
+    .blog-content {
+        padding: 40px 35px 20px 30px;
+        border: 1px solid $border-color;
+        .blog-meta {
+            margin-bottom: 15px;
+            ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                li{
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    position: relative;
+                    padding-right: 17px;
+                    margin-right: 15px;
+                    color: $secondary-color;
+                    i {
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: $secondary-color;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    &:before{
+                        content: "--";
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #d7d3d3;
+                        font-size: 13px;
+                    }
+                    &:last-child{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .blog-title a{
+            color: $secondary-color;
+            font-size: 20px;
+            letter-spacing: -.5px;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        
+    }
+}

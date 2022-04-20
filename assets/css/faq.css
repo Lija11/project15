@@ -1,0 +1,64 @@
+/*=============================
+04. Portfoilo
+=============================*/
+.faq-area {
+  background: #00235a; }
+  .faq-area .faq-video {
+    background: url(../img/images/faq-bg-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    .faq-area .faq-video .video-thumb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      color: #00235a;
+      font-size: 18px;
+      font-weight: 700; }
+      .faq-area .faq-video .video-thumb a {
+        background: #fff;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        display: block;
+        line-height: 120px;
+        text-align: center; }
+        .faq-area .faq-video .video-thumb a:hover {
+          color: #ff5e14; }
+  .faq-area .faq-content {
+    margin-left: 125px;
+    width: 550px; }
+    .faq-area .faq-content h2 {
+      color: #fff; }
+    .faq-area .faq-content .progress-item {
+      margin: 185px 0 0 0;
+      position: relative;
+      overflow: hidden; }
+    .faq-area .faq-content h5 {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .faq-area .faq-content .progress {
+      height: 60px;
+      border-radius: 0;
+      background: #082b63; }
+      .faq-area .faq-content .progress .progress-bar {
+        background: #ff5e14; }
+        .faq-area .faq-content .progress .progress-bar span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #fff;
+          line-height: 1;
+          font-weight: 700; }
+/*# sourceMappingURL=faq.css.map */

@@ -1,0 +1,25 @@
+/* brand-area */
+.brand-area .row .col {
+  max-width: 20%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%; }
+
+.brand-area {
+  height: 418px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .brand-area .brand-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 174px;
+            column-gap: 174px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 75px; }
+/*# sourceMappingURL=brand.css.map */

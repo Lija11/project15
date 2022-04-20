@@ -1,0 +1,105 @@
+@import 'variables';
+@import 'mixins';
+
+
+/*=============================
+04. Services
+=============================*/
+.main-title {
+    .sub-tittle {
+        & h5 {
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $border-color;
+            color: $primary-color;
+        }
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        & h2 {
+            font-size: 60px;
+            margin-bottom: 0;
+        }
+        & p {
+            font-size: 14px;
+            width: 440px;
+            margin-left: 50px;
+            margin-bottom: 0;
+        }
+    }
+}
+.services-item {
+    position: relative;
+    .services-thumb {
+        overflow: hidden;
+        a {
+            display: block;
+            img{
+                transition: 1s linear;
+                transform: scale(1);
+                width: 100%;
+            }
+        }
+    }
+    .services-icon {
+        position: absolute;
+        right: 40px;
+        top: 145px;
+        img {
+            padding: 15px;
+            background-color: $white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+    &:hover{
+        .services-thumb img {
+            transform: scale(1.07);
+        }
+        i {
+            background: $primary-color;
+            color: $white;
+        }
+        & .services-content i {
+            color: $white;
+        }
+        & .services-content span {
+            opacity: 1;
+        }
+    }
+    .services-content {
+        padding: 40px;
+        border: 1px solid $border-color;
+        & h6 a {
+            color: $primary-color;
+        }
+        & h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: $secondary-color;
+        }
+        & a {
+            & i {
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                border: 1px solid $border-color;
+                color: $paragraph-text-color;
+                @include trans(.3s);
+                font-size: 14px;
+            }
+            & span {
+                margin-left: 18px;
+                color: $secondary-color;
+                font-weight: 700;
+                font-size: 14px;
+                transition: .4s linear;
+                display: inline-block;
+                opacity: 0;
+                text-decoration: none;
+            }
+        } 
+    }
+}

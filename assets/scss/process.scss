@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixins';
+
+/*=============================
+04. Process
+=============================*/
+.process-area {
+    .process-item {
+        padding: 40px 30px 35px 40px;
+        position: relative;
+        box-shadow: $box-shadow 0px 8px 24px;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            background: $white;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: .3s linear;
+        }
+        &:hover {
+            &:before {
+                background: $secondary-color;
+                opacity: .9;
+            }
+            .process-content {
+                h4 {
+                    color: $white;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+        .process-icon {
+            margin-bottom: 20px;
+        }
+        .process-content {
+            & h4 {
+                color: $secondary-color;
+                font-size: 18px;
+                position: relative;
+                letter-spacing: -0.4px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                top: 20px;
+                right: 20px;
+                width: 5px;
+                height: 5px;
+                background: $primary-color;
+                opacity: 0;
+                transition: .4s;
+                z-index: 11;
+            }
+        }
+    }
+}

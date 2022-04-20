@@ -1,0 +1,47 @@
+/*=============================
+04. Process
+=============================*/
+.process-area .process-item {
+  padding: 40px 30px 35px 40px;
+  position: relative;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 1; }
+  .process-area .process-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .3s linear;
+    transition: .3s linear; }
+  .process-area .process-item:hover:before {
+    background: #00235a;
+    opacity: .9; }
+  .process-area .process-item:hover .process-content h4 {
+    color: #fff; }
+  .process-area .process-item:hover .process-content::after {
+    opacity: 1; }
+  .process-area .process-item .process-icon {
+    margin-bottom: 20px; }
+  .process-area .process-item .process-content h4 {
+    color: #00235a;
+    font-size: 18px;
+    position: relative;
+    letter-spacing: -0.4px; }
+  .process-area .process-item .process-content::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 20px;
+    width: 5px;
+    height: 5px;
+    background: #ff5e14;
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 11; }
+/*# sourceMappingURL=process.css.map */

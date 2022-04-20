@@ -1,0 +1,72 @@
+/*=============================
+04. Blog
+=============================*/
+.blog-item:hover .blog-thumb img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.blog-item .blog-thumb {
+  position: relative;
+  overflow: hidden; }
+  .blog-item .blog-thumb img {
+    width: 100%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    overflow: hidden;
+    -webkit-transition: all 1s ease-out 0s;
+    transition: all 1s ease-out 0s; }
+  .blog-item .blog-thumb .b-thumb-up {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background: #ff5e14;
+    padding: 5px 20px; }
+    .blog-item .blog-thumb .b-thumb-up a {
+      color: #fff; }
+
+.blog-item .blog-content {
+  padding: 40px 35px 20px 30px;
+  border: 1px solid #f3f3f3; }
+  .blog-item .blog-content .blog-meta {
+    margin-bottom: 15px; }
+    .blog-item .blog-content .blog-meta ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .blog-item .blog-content .blog-meta ul li {
+        font-size: 14px;
+        text-transform: capitalize;
+        position: relative;
+        padding-right: 17px;
+        margin-right: 15px;
+        color: #00235a; }
+        .blog-item .blog-content .blog-meta ul li i {
+          margin-right: 5px; }
+        .blog-item .blog-content .blog-meta ul li a {
+          color: #00235a; }
+          .blog-item .blog-content .blog-meta ul li a:hover {
+            color: #ff5e14; }
+        .blog-item .blog-content .blog-meta ul li:before {
+          content: "--";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          color: #d7d3d3;
+          font-size: 13px; }
+        .blog-item .blog-content .blog-meta ul li:last-child {
+          margin: 0;
+          padding: 0; }
+  .blog-item .blog-content .blog-title a {
+    color: #00235a;
+    font-size: 20px;
+    letter-spacing: -.5px; }
+    .blog-item .blog-content .blog-title a:hover {
+      color: #ff5e14; }
+/*# sourceMappingURL=blog.css.map */

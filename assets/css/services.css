@@ -1,0 +1,87 @@
+/*=============================
+04. Services
+=============================*/
+.main-title .sub-tittle h5 {
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  color: #ff5e14; }
+
+.main-title .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px; }
+  .main-title .title h2 {
+    font-size: 60px;
+    margin-bottom: 0; }
+  .main-title .title p {
+    font-size: 14px;
+    width: 440px;
+    margin-left: 50px;
+    margin-bottom: 0; }
+
+.services-item {
+  position: relative; }
+  .services-item .services-thumb {
+    overflow: hidden; }
+    .services-item .services-thumb a {
+      display: block; }
+      .services-item .services-thumb a img {
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        width: 100%; }
+  .services-item .services-icon {
+    position: absolute;
+    right: 40px;
+    top: 145px; }
+    .services-item .services-icon img {
+      padding: 15px;
+      background-color: #fff;
+      -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .services-item:hover .services-thumb img {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07); }
+  .services-item:hover i {
+    background: #ff5e14;
+    color: #fff; }
+  .services-item:hover .services-content i {
+    color: #fff; }
+  .services-item:hover .services-content span {
+    opacity: 1; }
+  .services-item .services-content {
+    padding: 40px;
+    border: 1px solid #f3f3f3; }
+    .services-item .services-content h6 a {
+      color: #ff5e14; }
+    .services-item .services-content h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #00235a; }
+    .services-item .services-content a i {
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      border: 1px solid #f3f3f3;
+      color: #adadad;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+      font-size: 14px; }
+    .services-item .services-content a span {
+      margin-left: 18px;
+      color: #00235a;
+      font-weight: 700;
+      font-size: 14px;
+      -webkit-transition: .4s linear;
+      transition: .4s linear;
+      display: inline-block;
+      opacity: 0;
+      text-decoration: none; }
+/*# sourceMappingURL=services.css.map */

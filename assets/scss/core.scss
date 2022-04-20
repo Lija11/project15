@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+/*=============================
+04. Portfoilo
+=============================*/
+.core-area {
+    .core-text {
+        margin-right: 40px;
+    }
+    .core-details {
+        .core-item {
+            margin-right: 55px;
+            & a {
+                display: block;
+                color: $secondary-color;
+                font-size:20px;
+                font-weight: 700;
+                margin: 0px 0 0 20px;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .core-img {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .core-shape {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -50px;
+        animation: updown 5s infinite;
+    }
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-100%);
+  }
+    50% {
+      transform: translateY(20%);
+  }
+    100% {
+      transform: translateY(-100%);
+  }
+  }

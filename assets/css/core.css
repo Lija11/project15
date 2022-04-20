@@ -1,0 +1,57 @@
+/*=============================
+04. Portfoilo
+=============================*/
+.core-area .core-text {
+  margin-right: 40px; }
+
+.core-area .core-details .core-item {
+  margin-right: 55px; }
+  .core-area .core-details .core-item a {
+    display: block;
+    color: #00235a;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0 0 20px; }
+    .core-area .core-details .core-item a:hover {
+      color: #ff5e14; }
+
+.core-area .core-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.core-area .core-shape {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -50px;
+  -webkit-animation: updown 5s infinite;
+          animation: updown 5s infinite; }
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%); }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%); }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
+/*# sourceMappingURL=core.css.map */

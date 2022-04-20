@@ -1,0 +1,163 @@
+/*=============================
+04. Portfoilo
+=============================*/
+.portfolio-area {
+  background: #00235a; }
+  .portfolio-area .main-title-w .sub-title h5 {
+    border-bottom: 1px solid #123770; }
+  .portfolio-area .main-title-w .title h2 {
+    color: #fff; }
+  .portfolio-area .portfolio-item {
+    position: relative;
+    overflow: hidden; }
+    .portfolio-area .portfolio-item img {
+      width: 100%;
+      -webkit-transition: all 1s ease-out 0s;
+      transition: all 1s ease-out 0s; }
+    .portfolio-area .portfolio-item .port-overly {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #00235a;
+      opacity: .9;
+      top: 0;
+      left: 0;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transition: all 0.4s ease-out 0s;
+      transition: all 0.4s ease-out 0s; }
+    .portfolio-area .portfolio-item a {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #ff5e14;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      opacity: 0;
+      -webkit-transition: all 0.4s ease-out 0s;
+      transition: all 0.4s ease-out 0s; }
+    .portfolio-area .portfolio-item .port-text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 9;
+      opacity: 0;
+      -webkit-transition: .4s;
+      transition: .4s;
+      width: 100%; }
+      .portfolio-area .portfolio-item .port-text h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 5px; }
+      .portfolio-area .portfolio-item .port-text h4 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff; }
+    .portfolio-area .portfolio-item:hover img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+    .portfolio-area .portfolio-item:hover .port-overly {
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+    .portfolio-area .portfolio-item:hover a {
+      top: 35px;
+      left: 35px;
+      opacity: 1;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg); }
+    .portfolio-area .portfolio-item:hover .port-text {
+      left: 30px;
+      bottom: 25px;
+      opacity: 1; }
+  .portfolio-area .prev {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #0b2c5f;
+    color: #fff;
+    position: absolute;
+    top: -96px;
+    right: 483px;
+    font-size: 14px;
+    -webkit-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    .portfolio-area .prev:hover {
+      background: #ff5e14; }
+  .portfolio-area .next {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #0b2c5f;
+    color: #fff;
+    position: absolute;
+    top: -96px;
+    right: 440px;
+    font-size: 14px;
+    -webkit-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    .portfolio-area .next:hover {
+      background: #ff5e14; }
+
+.gta-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 211px;
+  position: relative;
+  z-index: 1; }
+  .gta-bg::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ff5e14;
+    opacity: .9;
+    z-index: -1; }
+  .gta-bg .gta-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 66px; }
+    .gta-bg .gta-content .gta-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .gta-bg .gta-content .gta-text .title {
+        font-size: 60px;
+        font-weight: 700;
+        color: #fff; }
+      .gta-bg .gta-content .gta-text p {
+        width: 435px;
+        margin-left: 40px;
+        color: #fff; }
+    .gta-bg .gta-content .gta-btn {
+      font-size: 16px;
+      padding: 22px 40px;
+      font-weight: 700;
+      background: #fff;
+      color: #00235a; }
+      .gta-bg .gta-content .gta-btn:hover {
+        color: #ff5e14; }
+/*# sourceMappingURL=portfolio.css.map */
